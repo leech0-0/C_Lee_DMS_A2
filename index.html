@@ -1,0 +1,88 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <title>
+           C Lee Assignment 2
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Neroli Wesley;Jumi Suzuki Carpenter;Nguyen Nguyen;Ella Ferraretto;Kelly Ga Yi Xiao;C Lee;Phuong Nguyen;Ka Chen Yeo;Michelle Arlene Tan;Pauline Natasha Latidjan;Evelyn Tjiang</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">11;#Neroli Wesley;#16;#Jumi Suzuki Carpenter;#27;#Nguyen Nguyen;#17;#Ella Ferraretto;#15;#Kelly Ga Yi Xiao;#28;#C Lee;#14;#Phuong Nguyen;#13;#Ka Chen Yeo;#26;#Michelle Arlene Tan;#12;#Pauline Natasha Latidjan;#18;#Evelyn Tjiang</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    
+    <body style="background-color: rgb(163, 187, 246);">
+        
+        <div class="row">
+            <!-- This is a comment. It won't appear in your page -->
+            <!-- This long line contains the code for the image roll 
+                over which swaps in an alternative image. You need to select the extra 
+                code and paste it in for each image. Make sure the page still works after pasting. 
+                Replace the template file names with your own filenames for icons, 
+                the rollover version of icons and sounds.d
+            -->
+
+
+
+            <div class="image-container"><img id="Mindful1" src="img/Mindful_01.png" onmouseover="this.src='img/Mindful_01_aqua.png';" onmouseout="this.src='img/Mindful_01.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="Leaf2" src="img/Leaf_02.png" onmouseover="this.src='img/Leaf_02_aqua.png';" onmouseout="this.src='img/Leaf_02.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="Rain3" src="img/Rain_03.png" onmouseover="this.src='img/Rain_03_aqua.png';" onmouseout="this.src='img/Rain_03.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="Rainfall4" src="img/Rainfall_04.png" onmouseover="this.src='img/Rainfall_04_aqua.png';" onmouseout="this.src='img/Rainfall_04.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="Star5" src="img/Star_05.png" onmouseover="this.src='img/Star_05_aqua.png';" onmouseout="this.src='img/Star_05.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="Ocean6" src="img/Ocean_06.png" onmouseover="this.src='img/Ocean_06_aqua.png';" onmouseout="this.src='img/Ocean_06.png';" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="Forest7" src="img/Rainforest_07.png" onmouseover="this.src='img/Rainforest_07_aqua.png';" onmouseout="this.src='img/Rainforest_07.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="Bird8" src="img/Bird_08.png" onmouseover="this.src='img/Bird_08_aqua.png';" onmouseout="this.src='img/Bird_08.png';" width="200" height="200"/></div>
+            <div class="image-container"><img id="Fire9" src="img/Fire_09.png" onmouseover="this.src='img/Fire_09_aqua.png';" onmouseout="this.src='img/Fire_09.png';" width="200" height="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/Mindful1.mp3");
+            var sound2 = new buzz.sound("sound/Leaf2.mp3");
+            var sound3 = new buzz.sound("sound/Rain3.mp3");
+            var sound4 = new buzz.sound("sound/Waterfall4.mp3");
+            var sound5 = new buzz.sound("sound/Star5.mp3");
+            var sound6 = new buzz.sound("sound/Ocean6.mp3");
+            var sound7 = new buzz.sound("sound/Forest7.mp3");
+            var sound8 = new buzz.sound("sound/Bird8.mp3");
+            var sound9 = new buzz.sound("sound/Fire9.mp3");
+
+            window.onload = function() {
+                document.getElementById('Mindful1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('Leaf2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('Rain3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('Rainfall4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('Star5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('Ocean6').addEventListener('click', function () {sound6.play();}); 
+                document.getElementById('Forest7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('Bird8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('Fire9').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+
+    </body>
+
+</html>
+
